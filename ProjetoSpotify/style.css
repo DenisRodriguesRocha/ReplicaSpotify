@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.barralateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+    padding: 24px;
+}
+
+.barralateral .logo img {
+    width: 130px;
+}
+
+.barralateral .navegacao ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.barralateral .navegacao ul li {
+    padding: 10px 0px;
+}
+
+.barralateral .navegacao ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.barralateral .navegacao ul li a:hover,
+.barralateral .navegacao ul li a:active,
+.barralateral .navegacao ul li a:focus {
+    color: #ffffff;
+}
+
+.barralateral .navegacao ul li a:hover .fa,
+.barralateral .navegacao ul li a:active .fa,
+.barralateral .navegacao ul li a:focus .fa {
+    color: #b3b3b3;
+}
+
+.barralateral .navegacao ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.barralateral .navegacao ul li a:hover .fa:hover,
+.barralateral .navegacao ul li a:hover .fa:active,
+.barralateral .navegacao ul li a:hover .fa:focus {
+    color: #ffffff;
+}
+
+.barralateral .politicas {
+    position: absolute;
+    bottom: 100px;
+}
+
+.barralateral .politicas ul {
+    list-style: none;
+}
+
+.barralateral .politicas ul li {
+    padding-bottom: 5px;
+}
+
+.barralateral .politicas ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.politicas {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.barralateral .politicas ul li a:hover,
+.barralateral .politicas ul li a:active,
+.barralateral .politicas ul li a:focus {
+    text-decoration: underline;
+}
+
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+    background: linear-gradient(to bottom, #222222, #0c0c0c);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px;
+    opacity: 0.9;
+}
+
+.topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar ul li.divider {
+    color: #ffffff;
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+}
+
+
+.topbar .navbar button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.politicas button {
+    background-color: #000000;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 11px 25px;
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 40px;
+    border-color: gray;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.politicas button:hover {
+    border-color: white;
+    font-size: 13px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+    background-color: #f2f2f2;
+}
+
+.mostrar {
+    color: #b3b3b3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 94%;
+    white-space: nowrap;
+}
+
+.mostrar:hover {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+.spotify-playlists {
+    padding: 20px 40px;
+}
+
+.spotify-playlists h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlists h2:hover {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.spotify-playlists .lista {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlists .lista .item {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .lista .item:hover {
+    background-color: #252525;
+}
+
+.spotify-playlists .lista .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlists .lista .item .play {
+    position: relative;
+}
+
+.spotify-playlists .lista .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlists .lista .item:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlists .lista .item h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlists .lista .item p {
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.spotify-playlists hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rodape button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    .item {
+        overflow: hidden;
+    }
+
+    .spotify-playlists {
+        overflow: hidden;
+    }
+
+    .mostrar {
+        overflow: scroll;
+    }
+
+    .barralateral {
+        width: 25%;
+    }
+
+    .rodape {
+        display: none;
+    }
+
+    .politicas button {
+        margin-left: 3px;
+        font-size: 10px;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    .item {
+        overflow: hidden;
+    }
+
+    .spotify-playlists {
+        overflow: hidden;
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    .item {
+        overflow: hidden;
+    }
+
+    .spotify-playlists {
+        overflow: hidden;
+    }
+
+    .mostrar {
+        margin-right: 40%;
+    }
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    .item {
+        overflow: hidden;
+    }
+
+    .spotify-playlists {
+        overflow: hidden;
+    }
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    .item {
+        overflow: hidden;
+    }
+
+    .spotify-playlists {
+        overflow: hidden;
+    }
+}
